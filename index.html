@@ -28,13 +28,13 @@
     }
     .btn {
       background: #f5c542; color: #000;
-      padding: 10px 20px; border: none;
-      cursor: pointer; font-size: 16px;
+      padding: 5px 10px; border: none;
+      cursor: pointer; font-size: 14px;
+      float: right; margin-top: -3px;
     }
-    .price {
-      float: right;
-      color: green;
-      font-weight: bold;
+    .service-item {
+      margin-bottom: 10px;
+      overflow: auto;
     }
     footer {
       text-align: center; padding: 20px;
@@ -55,21 +55,9 @@
 
 <section id="services" class="services">
   <h2>Our Services</h2>
-  <ul>
-    <li>Financial Planning & Budgeting <span class="price">$499</span></li>
-    <li>Investment Advice <span class="price">$1499</span></li>
-    <li>Retirement Planning <span class="price">$899</span></li>
-  </ul>
-  <h3>Book a Session - $100</h3>
-  <!-- PayPal Payment Button -->
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-    <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="youremail@example.com">
-    <input type="hidden" name="item_name" value="Falkon Financial Session">
-    <input type="hidden" name="amount" value="100.00">
-    <input type="hidden" name="currency_code" value="USD">
-    <button class="btn" type="submit">Pay with PayPal</button>
-  </form>
+  <div class="service-item">Financial Planning & Budgeting <button class="btn">$499</button></div>
+  <div class="service-item">Investment Advice <button class="btn">$1499</button></div>
+  <div class="service-item">Retirement Planning <button class="btn">$899</button></div>
 </section>
 
 <section id="about">
